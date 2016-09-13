@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <div class="l-wrapper">
+      <header class="l-header">
+        <div class="l-logo">
+          <h1 clas="logo">
+            <a href="/" title="Slam Alphas">
+              <span class="logo-name">Slam Alphas</span>
+              <span class="logo-symbol" aria-hidden="true"></span>
+            </a>
+          </h1>
+          <button class="logo-burger">Burger</button>
+        </div>
+        <nav class="l-navigation">
+          <ul class="navigation">
+            <li><a href="#">Die Idee</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Karten</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+          <ul class="social">
+          <li><a href="#">facebook</a></li>
+          <li><a href="#">twitter</a></li>
+        </ul>
+        </nav>
+      </header>
+      <aside class="l-alphabet">
+        <ul>
+          <li><a href="#">a</a></li>
+          <li><a href="#">b</a></li>
+          <li><a href="#">c</a></li>
+          <li><a href="#">d</a></li>
+        </ul>
+      </aside>
+      <main class="l-main">
+        <div class="l-content">
+          {{ content }}
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
