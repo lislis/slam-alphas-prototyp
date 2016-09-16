@@ -1,33 +1,61 @@
 .logo
   margin-bottom: 0
+  flex: 1 0 60%
+  background-color: white
   
 .logo-name
   background:
     image: url(/assets/logo.svg)
-    size: 134% auto
-    position: center center
+    size: 140px auto
+    position: center 38%
     repeat: no-repeat
   display: block
-  width: 182px
-  height: 134px
-  margin: 53px auto 0
+  height: 70px
+  flex: 1 0 60%
   text-indent: 999%
   overflow: hidden
   white-space: nowrap
+  border-right: 6px solid black
+  border-left: 6px solid black
+  @media (min-width: $on-laptop)
+    width: 182px
+    height: 134px
+    margin: 53px auto 0
+    background-size: 134% auto
+    background-position: center 38%
+    border: none
 
 .logo-symbol
   background:
     image: url(/assets/alphaherz.svg)
-    size: 107% auto
-    position: 2px center
+    size: 160% auto
+    position: 45% 54%
     repeat: no-repeat
   display: block
-  width: 182px
-  height: 52px
-  margin: -30px auto 0
+  flex: 0 100px
+  height: 70px
   text-indent: 999%
   overflow: hidden
   white-space: nowrap
+  @media (min-width: $on-laptop)
+    margin: -17px auto 0
+    width: 182px
+    height: 52px
+    background:
+      size: 107% auto
+      position: 2px center
 
 .logo-burger
-  display: none
+  border: none
+  border-top: 6px solid black
+  background: white
+  height: 41px
+  align-self: flex-end
+  flex: 0 0 70px
+  cursor: pointer
+  @media (min-width: $on-laptop)
+    display: none
+
+  
+
+  
