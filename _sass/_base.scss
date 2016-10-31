@@ -45,6 +45,8 @@ ul, ol, dl, figure,
 img {
     max-width: 100%;
     vertical-align: middle;
+    width:100%;
+    height: auto;
 }
 
 /**
@@ -138,31 +140,16 @@ pre {
     }
 }
 
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
+button,
+input[type=submit] {
+    background: $blue;
+    color: white;
+    font-family: inherit;
+    border: 2px solid black;
+    cursor: pointer;
+    &:hover,
+    &:active {
+        color: black;
+        background: white
     }
 }
