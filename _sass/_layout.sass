@@ -87,16 +87,34 @@
   background-color: white
   @media (min-width: $on-laptop)
     overflow: scroll
-  
-.l-content
+
+%content
   max-width: 950px
   height: auto
   padding: 53px 37px
   margin-right: auto
   margin-left: auto
+    
+.l-content
+  @extend %content
   @media (min-width: $on-laptop)
     display: flex
 
+.l-content--noflex
+  @extend %content
+
+.l-footer
+  border-top: solid 5px black
+  @media (min-width: $on-laptop)
+    height: 5em  
+
+.l-footer-inner
+  max-width: 950px
+  height: auto
+  padding: 37px
+  margin-right: auto
+  margin-left: auto
+    
 .col-2
   @media (min-width: $on-laptop)
     flex: 0 1 66%
@@ -126,6 +144,11 @@
     font-weight: 600
     font-size: 20px
     color: inherit
+  a
+    text-decoration: none
+    &:hover,
+    &:active
+      text-decoration: underline
 
 .navigation,
 .social
@@ -166,6 +189,12 @@
   padding: 0
   margin: 0
 
+  .title-main a
+    text-decoration: none
+    &:hover,
+    &:active
+      text-decoration: underline
+  
   article
     border-bottom: 6px solid black
     padding-bottom: 25px
