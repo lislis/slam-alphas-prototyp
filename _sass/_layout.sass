@@ -183,7 +183,6 @@
   a
     color: $red
 
-
 .post-list
   list-style: none
   padding: 0
@@ -205,7 +204,8 @@
     flex-flow: row wrap
     justify-content: space-between
     li
-      flex: 0 1 47.5%
+      flex: 0 1 auto
+      width: 47.5%
 
 .post-single
   padding-bottom: 100px
@@ -224,3 +224,32 @@
 
 hr
   border: 2px solid black
+
+.list-images
+  padding: 0
+  margin: 0
+  list-style: none
+  li, a
+    color: inherit
+  a
+    text-decoration: none
+    &:hover,
+    &:active
+      text-decoration: underline
+  li
+    position: relative
+    overflow: hidden
+    &:hover,
+    &:active
+      .image-additional
+        transform: translateY(0)
+
+.image-additional
+  position: absolute
+  bottom: 0
+  width: 100%
+  padding: .2em
+  margin-bottom: 0
+  background: rgba(255, 255, 255, .8)
+  transition: transform 200ms ease
+  transform: translateY(130%)
