@@ -129,6 +129,7 @@
     color: inherit
   
 .title-sub
+  margin-bottom: .4em
   text-transform: uppercase
   font-weight: 600
   font-size: 20px
@@ -251,3 +252,19 @@ hr
   background: rgba(255, 255, 255, .8)
   transition: transform 200ms ease
   transform: translateY(130%)
+
+.has-js
+  .accordion-h
+    position: relative
+    cursor: pointer
+    &:hover,
+    &:active
+      background: #f1f1f1
+    &.is-open
+      display: block
+
+.is-hidden
+  height: 0
+  overflow: hidden
+  transition: height 200ms ease
+  
