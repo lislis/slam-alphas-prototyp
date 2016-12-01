@@ -141,20 +141,6 @@ pre {
     }
 }
 
-button,
-input[type=submit] {
-    background: $blue;
-    color: white;
-    font-family: inherit;
-    border: 2px solid black;
-    cursor: pointer;
-    &:hover,
-    &:active {
-        color: black;
-        background: white
-    }
-}
-
 figure {
     max-width: 100% !important; // to overwrite wp
 }
