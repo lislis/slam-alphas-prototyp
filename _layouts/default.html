@@ -20,7 +20,7 @@
           <ul class="navigation">
             <li><a href="index.html">Die Idee</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="#">Karten</a></li>
+            <li><a href="karte.html">Karten</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
@@ -39,18 +39,11 @@
         </ul>
         </nav>
       </header>
-      <aside class="l-alphabet">
-        <ul>
-          <li><a href="#">a</a></li>
-          <li><a href="#">b</a></li>
-          <li><a href="#">c</a></li>
-          <li><a href="#">d</a></li>
-        </ul>
-      </aside>
+
+      {% include alphabet.html %}
+
       <main class="l-main">
-        <div class="l-content">
           {{ content }}
-        </div>
         <footer class="l-footer">
           <div class="l-footer-inner">
             <p><strong>Verantwortlich für den Inhalt</strong></p>

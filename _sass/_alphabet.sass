@@ -1,0 +1,60 @@
+.l-alphabet
+  ul
+    padding: 0
+    margin: 0
+    list-style: none
+    text-transform: uppercase
+    text-align: center
+    font-weight: 600
+  a
+    color: black
+    text-decoration: none
+    &:hover,
+    &:active
+      color: $red
+    
+.list-alphabet
+  border-top: 5px solid black
+  border-right: 5px solid black
+  border-bottom: 5px solid black
+
+  width: 300px
+  padding: 1em 1.2em
+  
+  @media (min-width: $on-laptop)
+    position: absolute
+    background: white
+    height: 100%
+    overflow-y: scroll
+
+  .title-main
+    margin-bottom: .3em
+  
+  ul
+    list-style: none
+    padding: 0
+    margin: 0 0 2.3em
+    font-weight: $bold-font-weight
+  a
+    text-decoration: none
+    &:hover,
+    &:active
+      text-decoration: underline
+      color: black
+
+  .has-js &
+    &.is-hidden
+      display: none
+
+.list-button
+  float: right
+  padding: 0
+  border: none
+  background: none
+  color: black
+  font-size: 2rem
+  font-weight: $bold-font-weight
+  &:hover,
+  &:active
+    background: none
+    color: black

@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
     nav.classList.toggle('is-open');
   });
 
-  // faq accordion
-
   if (document.querySelector('body').classList.contains('has-js')) {
+
+    // faq accordion
     var heads = document.querySelectorAll('.accordion-h');
     var bodies = document.querySelectorAll('.accordion-b');
 
@@ -32,6 +32,11 @@ document.addEventListener("DOMContentLoaded", function () {
         this.nextElementSibling.classList.toggle('is-hidden');
       });
     }
-  }
+
+    // alphabet list toggle
+
+    var alphabetList = document.querySelector('.list-alphabet');
+    alphabetList.classList.add('is-hidden');
+  }  
 });
 
