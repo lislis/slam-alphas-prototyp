@@ -37,6 +37,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var alphabetList = document.querySelector('.list-alphabet');
     alphabetList.classList.add('is-hidden');
+    var listTrigger = document.querySelectorAll('.l-alphabet a');
+    var listClose = document.querySelector('.list-button');
+
+    for (trigger of listTrigger) {
+      trigger.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        alphabetList.classList.remove('is-hidden');
+      });
+    }
+
+    listClose.addEventListener('click', function () {
+      alphabetList.classList.add('is-hidden');
+    });
   }  
 });
 

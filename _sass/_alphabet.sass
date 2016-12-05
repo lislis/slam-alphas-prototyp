@@ -42,9 +42,11 @@
       text-decoration: underline
       color: black
 
+  transition: transform 200ms ease
   .has-js &
     &.is-hidden
-      display: none
+      transform: translateX(-150%)
+      z-index: -1
 
 .list-button
   float: right
