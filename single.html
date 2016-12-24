@@ -2,6 +2,19 @@
 layout: map
 ---
 
+<article class="slam-profile">
+    <button class="profile-button" type="button" title="close profile">X</button>
+    <header>
+        <h1 class="title-sub">Vorname<br>Nachname</h1>
+        <p>Stadt</p>
+    </header>
+    <div>
+        <p>
+            <a href="#">website</a><br>
+            <a href="#">facebook</a>
+        </p>
+    </div>
+</article>
 <main class="l-map">
     <div id="map"><div>
 </main>
@@ -14,7 +27,6 @@ layout: map
      maxZoom: 18
  }).addTo(mymap);
 
-
  var markerRed = L.icon({
      iconUrl: 'assets/marker-red.svg',
      iconSize: [30, 48],
@@ -23,8 +35,11 @@ layout: map
  });
 
  var marker = L.marker([51.5, -0.09], {icon: markerRed, alt: "single.html"}).addTo(mymap);
+
  marker.bindTooltip('Slammerin');
- marker.on('click', function(ev) {
-     window.location = ev.target.options.alt;
+ marker.on('click', function (ev) {
+   if (document.querySelector('.slam-profile').classList.contains('is-hidden')) {
+     document.querySelector('.slam-profile').classList.remove('is-hidden');
+   }
  });
 </script>

@@ -12,7 +12,7 @@
     &:hover,
     &:active
       color: $red
-    
+
 .list-alphabet
   border-top: 5px solid black
   border-right: 5px solid black
@@ -20,7 +20,7 @@
 
   width: 300px
   padding: 1em 1.2em
-  
+
   @media (min-width: $on-laptop)
     position: absolute
     background: white
@@ -29,7 +29,7 @@
 
   .title-main
     margin-bottom: .3em
-  
+
   ul
     list-style: none
     padding: 0
@@ -45,12 +45,56 @@
   transition: transform 200ms ease
   z-index: 2
   .has-js &
+    transform: translateX(109%)
     &.is-hidden
       transform: translateX(-150%)
       z-index: -1
 
 .list-button
   float: right
+  padding: 0
+  border: none
+  background: none
+  color: black
+  font-size: 2rem
+  font-weight: $bold-font-weight
+  &:hover,
+  &:active
+    background: none
+    color: $red
+
+
+.slam-profile
+  position: absolute
+  width: 300px
+  left: 329px
+  height: 100%
+  padding: 4.5em 1.2em 1em
+  z-index: 2
+
+  background: white
+  border-top: 5px solid black
+  border-right: 5px solid black
+  border-bottom: 5px solid black
+
+  header
+    margin: 0 0 3px
+    text-align: center
+    h1
+      line-height: 1
+
+  transition: transform 200ms ease
+  z-index: 2
+  .has-js &
+    &.is-hidden
+      transform: translateX(-150%)
+      z-index: -1
+
+
+.profile-button
+  position: absolute
+  top: 16px
+  right: 19px
   padding: 0
   border: none
   background: none
