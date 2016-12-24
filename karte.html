@@ -7,13 +7,18 @@ layout: map
 </main>
 
 <script>
- var mymap = L.map('map').setView([51.505, -0.09], 13);
+ var mymap = L.map('map', {
+     zoomControl: false,
+     attributionControl: false,
+     scrollWheelZoom: false
+ }).setView([51.505, -0.09], 13);
+
+ L.control.zoom({ position: 'topright' }).addTo(mymap);
 
  L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
      attribution: '',
      maxZoom: 18
  }).addTo(mymap);
-
 
  var markerRed = L.icon({
      iconUrl: 'assets/marker-red.svg',
